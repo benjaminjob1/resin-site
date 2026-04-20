@@ -86,16 +86,6 @@ export default function ResinCalculator() {
 
       <main className="flex-1 overflow-auto p-4 pb-24">
         <div className="max-w-md mx-auto space-y-6">
-          {/* Tab Navigation */}
-          <div className="flex gap-2 rounded-xl p-1" style={{ backgroundColor: "rgba(20,20,20,0.9)" }}>
-            <button onClick={() => setActiveTab("calculator")} className="flex-1 py-2 px-4 rounded-lg text-sm font-medium transition-all" style={activeTab === "calculator" ? { backgroundColor: settings.accent } : {}}>
-              Calculator
-            </button>
-            <button onClick={() => setActiveTab("info")} className="flex-1 py-2 px-4 rounded-lg text-sm font-medium transition-all" style={activeTab === "info" ? { backgroundColor: settings.accent } : {}}>
-              Info
-            </button>
-          </div>
-
           {activeTab === "calculator" ? (
             <>
               {/* Print Stats */}
